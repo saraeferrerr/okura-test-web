@@ -109,51 +109,115 @@ const MENUS = {
     title: 'Dinner',
     sub:   'Japanese Classics · Seasonal Ingredients',
     sections: [
-      { heading: 'Starters', items: [
-        { name: 'Chicken Nanban', desc: 'Crispy fried chicken',                   price: '€10' },
-        { name: 'Prawn Tempura',   desc: 'Light battered prawns, tentsuyu dip (4pcs)',           price: '€12' },
-        { name: 'Seaweed Salad',   desc: 'Wakame, sesame oil, rice vinegar',                    price: '€8'  },
-        { name: 'Takoyaki',        desc: 'Octopus balls, bonito flakes, mayo (6pcs)',            price: '€9'  },
-      ]},
-      { heading: 'Mains', items: [
-        { name: 'Teriyaki Chicken', desc: 'Grilled chicken thigh, house teriyaki glaze, steamed rice', price: '€19' },
-        { name: 'Tonkatsu',         desc: 'Panko pork cutlet, tonkatsu sauce, pickled cabbage',         price: '€21' },
-        { name: 'Beef Yakiniku',    desc: 'Marinated Irish beef strips, garlic soy, steamed rice',      price: '€26' },
-        { name: 'Salmon Teriyaki',  desc: 'Pan-seared salmon, teriyaki glaze, pickled ginger',          price: '€23' },
-        { name: 'Vegetable Curry',  desc: 'Japanese golden curry, seasonal veg, steamed rice',          price: '€17' },
-      ]},
-      { heading: 'Desserts', items: [
-        { name: 'Mochi Ice Cream',       desc: 'Assorted flavours (3pcs)',                      price: '€8' },
-        { name: 'Matcha Crème Brûlée', desc: 'Ceremonial grade matcha, house-made',            price: '€9' },
-        { name: 'Dorayaki',              desc: 'Japanese pancakes, sweet red bean paste',       price: '€7' },
-      ]},
-    ],
+
+      {
+        heading: 'Starters',
+        items: [
+          { name: 'Edamame', desc: 'Steamed soybeans with sea salt', price: '€7.0' },
+          { name: 'Chicken Karaage', desc: 'Japanese fried chicken', price: '€10.5' },
+          { name: 'Chicken Yakitori', desc: 'Grilled chicken skewers', price: '€10.5' },
+          { name: 'Ebi Tempura', desc: 'Deep fried prawns', price: '€12.8' },
+          { name: 'Gyoza', desc: 'Pan fried pork dumplings', price: '€10.5' },
+          { name: 'Miso Soup', desc: 'Traditional soybean soup', price: '€5.0' }
+        ]
+      },
+
+      {
+        heading: 'Tempura',
+        items: [
+          { name: 'Ebi Tempura', desc: 'Prawns fried in tempura batter', price: '€13.8' },
+          { name: 'Vegetable Tempura', desc: 'Assorted vegetables', price: '€13.8' },
+          { name: 'Tempura Moriawase', desc: 'Mixed tempura platter', price: '€13.8' }
+        ]
+      },
+
+      {
+        heading: 'Ramen',
+        items: [
+          { name: 'Chashu Ramen', desc: 'Pork broth ramen with chashu pork', price: '€18.8' },
+          { name: 'Chicken Ramen', desc: 'Chicken broth ramen', price: '€18.8' },
+          { name: 'Seafood Ramen', desc: 'Ramen with mixed seafood', price: '€18.8' },
+          { name: 'Beef Ramen', desc: 'Ramen with sliced beef', price: '€18.8' },
+          { name: 'Tofu Ramen', desc: 'Vegetarian ramen with tofu', price: '€18.8' }
+        ]
+      },
+
+      {
+        heading: 'Fried Noodles',
+        items: [
+          { name: 'Yaki Udon', desc: 'Stir fried thick noodles', price: '€18.8' },
+          { name: 'Seafood Yaki Soba', desc: 'Fried noodles with seafood', price: '€19.8' },
+          { name: 'Chicken Yaki Soba', desc: 'Fried noodles with chicken', price: '€18.8' },
+          { name: 'Beef Yaki Soba', desc: 'Fried noodles with beef', price: '€19.5' },
+          { name: 'Vegetable Yaki Soba', desc: 'Fried noodles with vegetables', price: '€15.8' }
+        ]
+      },
+
+      {
+        heading: 'Fried Rice',
+        items: [
+          { name: 'Vegetable Fried Rice', desc: 'Fried rice with mixed vegetables', price: '€15.8' },
+          { name: 'Seafood Fried Rice', desc: 'Fried rice with seafood', price: '€18.9' },
+          { name: 'Chicken Fried Rice', desc: 'Fried rice with chicken', price: '€18.9' },
+          { name: 'Curry Beef Fried Rice', desc: 'Fried rice with curry beef', price: '€18.9' }
+        ]
+      },
+
+      {
+        heading: 'Teppanyaki',
+        items: [
+          { name: 'Black Angus Fillet', desc: 'Grilled beef with vegetables', price: '€36.8' },
+          { name: 'Irish Angus Fillet', desc: 'Premium grilled beef', price: '€32.8' },
+          { name: 'Duck Breast', desc: 'Grilled duck breast', price: '€29.8' },
+          { name: 'Chicken Breast', desc: 'Grilled chicken breast', price: '€26.8' },
+          { name: 'Salmon Fillet', desc: 'Grilled salmon', price: '€26.8' },
+          { name: 'Mix Seafood', desc: 'Grilled seafood platter', price: '€30.8' }
+        ]
+      },
+
+      {
+        heading: "Chef's Special",
+        items: [
+          { name: 'Chirashi Don', desc: 'Assorted sashimi on sushi rice', price: '€22.8' },
+          { name: 'Salmon Teriyaki Don', desc: 'Grilled salmon with teriyaki sauce', price: '€18.8' },
+          { name: 'Beef Gyudon', desc: 'Japanese beef rice bowl', price: '€18.8' },
+          { name: 'Pork Shogayaki Don', desc: 'Pork with ginger sauce', price: '€17.8' },
+          { name: 'Chicken Teriyaki Don', desc: 'Chicken with teriyaki sauce', price: '€17.8' }
+        ]
+      },
+
+      {
+        heading: 'Extras',
+        items: [
+          { name: 'Japanese Rice', desc: 'Steamed rice', price: '€3.5' },
+          { name: 'Fried Rice', desc: 'Side portion', price: '€5.0' },
+          { name: 'Miso Soup', desc: 'Side soup', price: '€4.0' },
+          { name: 'Kimchi', desc: 'Spicy fermented cabbage', price: '€4.0' }
+        ]
+      }
+
+    ]
   },
   drinks: {
     title: 'Drinks',
     sub:   'Japanese Spirits · Cocktails · Wine',
     sections: [
-      { heading: 'Japanese Beer', items: [
-        { name: 'Sapporo',         desc: '330ml bottle', price: '€6'    },
-        { name: 'Asahi Super Dry', desc: '330ml bottle', price: '€6'    },
-        { name: 'Kirin Ichiban',   desc: '330ml bottle', price: '€6.50' },
-      ]},
-      { heading: 'Cocktails', items: [
-        { name: 'Sake Martini',  desc: 'Junmai sake, dry vermouth, yuzu twist',            price: '€12' },
-        { name: 'Tokyo Mule',    desc: 'Japanese whisky, ginger beer, fresh lime',         price: '€13' },
-        { name: 'Yuzu Sour',     desc: 'Shochu, yuzu juice, egg white, bitters',           price: '€12' },
-        { name: 'Sakura Spritz', desc: 'Elderflower, sake, prosecco, cherry blossom syrup',price: '€13' },
-      ]},
+      { heading: 'Beer/Cider', items: [
+        { name: 'Asahi Super Dry', desc: 'Draft', price: '€7'    },
+        { name: 'Kirin Ichiban',   desc: '330ml bottle', price: '€6' },
+          { name: 'Heineken 0%',   desc: '330ml bottle', price: '€5' },
+          { name: 'Stonewell Medium Dry',   desc: '330ml bottle', price: '€6' },
+        ]},
       { heading: 'Wine', items: [
         { name: 'House White', desc: 'Chardonnay — glass / bottle', price: '€8 / €32' },
         { name: 'House Red',   desc: 'Merlot — glass / bottle',     price: '€8 / €32' },
         { name: 'Prosecco',    desc: 'Glass / bottle',               price: '€9 / €40' },
       ]},
-      { heading: 'Hot & Soft Drinks', items: [
-        { name: 'Green Tea',    desc: 'Loose-leaf sencha',                          price: '€3.50' },
-        { name: 'Matcha Latte', desc: 'Ceremonial grade, oat or whole milk',        price: '€5'    },
-        { name: 'Coffee',       desc: 'Espresso · Americano · Latte · Cappuccino',  price: '€3.50' },
-        { name: 'Soft Drinks',  desc: 'Coke, Diet Coke, Sprite, Lemonade',          price: '€3'    },
+      { heading: 'Soft Drinks', items: [
+        { name: 'Coke',    desc: '',                          price: '€3' },
+        { name: 'Coke zero', desc: '',        price: '€3'    },
+        { name: '7Up',       desc: '',  price: '€3' },
+        { name: 'Fanta',  desc: '',          price: '€3'    },
       ]},
     ],
   },
