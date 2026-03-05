@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Okura Japanese Cuisine – Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body data-page="home">
+
+  <!-- ═══ NAVBAR ═══ -->
+  <header id="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="logo" aria-label="Okura Cuisine Home">
+        <div class="logo-mark">
+          <video class="logo-bg-video" autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/3209828/3209828-hd_1280_720_25fps.mp4" type="video/mp4"/>
+          </video>
+          <svg viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="46" height="54" stroke="currentColor" stroke-width="2"/>
+            <text x="24" y="38" text-anchor="middle" font-family="Playfair Display, serif" font-size="28" font-weight="700" fill="currentColor">O</text>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">OKURA</span>
+          <span class="logo-sub">CUISINE</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"   class="nav-link active">Home</a></li>
+        <li><a href="menu.html"    class="nav-link">Menus</a></li>
+        <li><a href="about.html"   class="nav-link">About Us</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <a href="booking.html" class="btn btn-teal">BOOK NOW</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1400&q=85')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=1400&q=85')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=85')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="heroContent">
+      <h1 class="hero-title">Welcome to Okura</h1>
+      <p class="hero-sub">Japanese Cuisine · Douglas, Cork</p>
+      <div class="hero-actions">
+        <a href="menu.html"    class="btn btn-teal">View Menus</a>
+        <a href="booking.html" class="btn btn-ghost">Book a Table</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><span></span></div>
+  </section>
+
+  <!-- ═══ ABOUT STRIP ═══ -->
+  <section class="about-strip">
+    <div class="about-img-col">
+      <img
+        src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80"
+        alt="Okura restaurant interior"
+        loading="lazy"
+      />
+    </div>
+    <div class="about-text">
+      <span class="section-label">Our Story</span>
+      <h2>Located on East Street, Douglas</h2>
+      <div class="divider"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="about.html" class="btn btn-teal" style="margin-top:8px">Our Story</a>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURES ═══ -->
+  <section class="features">
+    <a href="menu.html" class="feature-card">
+      <span class="fi">🍣</span>
+      <h3>Sushi</h3>
+      <p>Maki rolls, nigiri and sashimi crafted fresh in-house daily from the finest ingredients.</p>
+      <span class="f-link">View Menu</span>
+    </a>
+    <a href="menu.html" class="feature-card">
+      <span class="fi">🍱</span>
+      <h3>Dinner</h3>
+      <p>Japanese classics — teriyaki, tonkatsu and teppanyaki cooked to perfection.</p>
+      <span class="f-link">View Menu</span>
+    </a>
+    <a href="menu.html" class="feature-card">
+      <span class="fi">🍶</span>
+      <h3>Drinks</h3>
+      <p>Japanese beers, sake cocktails, curated wines and soft drinks to complement your meal.</p>
+      <span class="f-link">View Menu</span>
+    </a>
+  </section>
+
+  <!-- ═══ MAP + PHOTO ═══ -->
+  <div class="map-row">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2463.0946609382186!2d-8.4360381!3d51.877484599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484485eea62c530b%3A0xacb14ea06485e454!2sOkura%20Japanese%20Cuisine!5e0!3m2!1sen!2sde!4v1771427124846!5m2!1sen!2sde"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Okura location">
+    </iframe>
+    <div class="map-photo">
+      <img
+        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80"
+        alt="Okura dining room"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4 class="footer-heading">Opening Hours</h4>
+        <ul class="hours-list" id="hoursList"></ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact Us</h4>
+        <p class="foot-name">Okura Japanese Cuisine</p>
+        <div class="foot-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.57 1 1 0 01-.25 1.01z"/></svg>
+          <span>(021) 245 5750</span>
+        </div>
+        <div class="foot-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>East Street, Douglas, Cork</span>
+        </div>
+        <div class="foot-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>okuradouglas@gmail.com</span>
+        </div>
+        <a href="booking.html" class="btn btn-teal foot-book">BOOK NOW</a>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menus</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Follow Us</h4>
+        <div class="social-row">
+          <a href="#" class="soc-btn soc-fb" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="soc-btn soc-ig" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>Copyright &copy; Okura Japanese Cuisine &middot; All Rights Reserved &middot;
+        <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Use</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
